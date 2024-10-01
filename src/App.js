@@ -1,24 +1,42 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
+import './SignupLoginForm'
+import SignupLoginForm from './SignupLoginForm';
+import ForgotPassword from './ForgotPassword';
+import Dashboard from './components/tickets/UserTicketDashboard';
+import AdminDashboard  from './components/tickets/AdminDashboard';
+import AgentDashboard from './components/tickets/AgentDashboard';
+import HomePage from './components/tickets/homepage';
+
 function App() {
+  const isAuthenticated = !!localStorage.getItem('token');
+  const userRole = localStorage.getItem('userRole');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signuplogin" element={<SignupLoginForm />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/agent" element={<AgentDashboard />} />
+        <Route
+          path="*"
+          element={
+            isAuthenticated && userRole === 'admin' ? (
+              <Navigate to="/admin" />
+            ) : isAuthenticated && userRole === 'agent' ? (
+              <Navigate to="/agent" />
+            ) : (
+              <Navigate to="/dashboard" />
+            )
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 

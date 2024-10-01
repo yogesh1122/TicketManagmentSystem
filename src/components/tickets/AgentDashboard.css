@@ -1,0 +1,175 @@
+.agent-dashboard {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-list {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap; /* Add this line */
+}
+
+.ticket-list.assigned {
+  background-color: #f0f0f0;
+}
+
+.ticket-list.unassigned {
+  background-color: #fff;
+}
+
+.ticket-list h2 {
+  margin-top: 0;
+}
+
+.ticket-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ticket-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.ticket-list li:last-child {
+  border-bottom: none;
+}
+
+.ticket-list button {
+  margin-right: 10px;
+}
+
+.ticket-list select {
+  margin-right: 10px;
+}
+
+.unassigned-ticket-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+
+
+.ticket-card:last-child {
+  border-bottom: none;
+}
+
+.ticket-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns of equal width */
+  gap: 20px; /* add a gap between columns */
+  max-width: 1200px; /* set a maximum width for the container */
+  margin: 40px auto; /* add a margin to center the container */
+  padding: 20px; /* add padding to the container */
+  border: 1px solid #ddd; /* add a border to the container */
+  border-radius: 10px; /* add a border radius to the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a box shadow to the container */
+}
+
+.ticket-type-container {
+  background-color: #f7f7f7; /* add a background color to each column */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* add a gap between ticket cards */
+}
+
+.ticket-card {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.agent-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.agent-navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.agent-navbar-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.agent-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: red; /* default color */
+  transition: transform 0.2s ease; /* add transition effect */
+  background-color: #f0f0f0; /* background color */
+  border-radius: 5px; /* make it circular */
+  padding: 5px 10px; /* add some padding */
+  display: inline-flex; /* make it an inline flex container */
+  align-items: center; /* center the logo vertically */
+  justify-content: center; /* center the logo horizontally */
+}
+
+.agent-name:hover {
+  transform: scale(1.1); /* zoom in by 10% */
+  color: palevioletred; /* hover color */
+  cursor: pointer; /* add pointer cursor on hover */
+}
+
+.agent-name::before {
+  content: ''; /* add an empty content */
+  background-image: url('../../../public/logo192.png'); 
+  background-size: 20px 20px; /* adjust the logo size */
+  width: 20px; /* adjust the logo size */
+  height: 20px; /* adjust the logo size */
+  margin-right: 10px; /* add some margin between the logo and text */
+  display: inline-block; /* make it an inline block */
+}
+/* add media queries to make the layout responsive */
+@media (max-width: 768px) {
+  .ticket-list-container {
+    grid-template-columns: 1fr; /* change to a single column on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .ticket-list-container {
+    margin: 20px auto; /* reduce the margin on smaller screens */
+  }
+}
+
+.lbutton {
+  background-color: #345; /* Set the background color to a dark blue */
+  color: #ffffff; /* Set the text color to white */
+  padding: 10px 20px; /* Add some padding to make the button wider */
+  border: none; /* Remove the default border */
+  border-radius: 5px; /* Add a rounded corner effect */
+  cursor: pointer; /* Change the cursor to a pointing hand on hover */
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 50px;
+}
+.lbutton:hover{
+  transform: scale(1.2); /* zoom in by 10% */
+  color: palevioletred; 
+  background-color: #fff;
+}

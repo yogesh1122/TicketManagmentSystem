@@ -1,0 +1,263 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    
+  }
+  .header h2 {
+    color: #ff4f44; /* Change this to your desired color */
+    font-size: 28px; /* Adjust font size if needed */
+    text-shadow: 1px 1px 2px #000; /* Optional: add shadow for better visibility */
+    margin: 0;
+    padding: 10px 0;
+    /* text-transform: uppercase; */
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping of items on smaller screens */
+  }
+  
+  
+  .create-ticket-btn svg {
+    width: 10px;  /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+    color: rgb(184, 29, 29); /* Ensure icon is visible against the button */
+  }
+
+  .create-ticket-btn svg::before {
+    content: ''; /* Required for ::before pseudo-element */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Light highlight effect */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2); /* Center and scale up */
+    transition: transform 0.3s; /* Animation for scaling effect */
+    z-index: -1; /* Place behind the icon */
+  }
+  
+  .create-ticket-btn:hover {
+    background-color: #22404c;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .create-ticket-btn:active {
+    transform: scale(0.95);
+  }
+  
+  .ticket-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    flex-wrap: wrap; /* Allow wrapping of ticket cards */
+  }
+  
+  .ticket-card {
+    flex: 0 0 auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .ticket-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .ticket-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+    word-wrap: break-word; /* Ensure long words break */
+  }
+  
+  .ticket-card p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+    word-wrap: break-word; /* Ensure long words break */
+  }
+  
+  .ticket-status, .ticket-priority {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .ticket-date {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .color-0 {
+    background-color: #e3f2fd;
+  }
+  
+  .color-1 {
+    background-color: #ffebee;
+  }
+  
+  .color-2 {
+    background-color: #e8f5e9;
+  }
+  
+  .ticket-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('https://cdn.pixabay.com/photo/2023/08/08/06/45/ai-generated-art-8891120_960_720.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: #03a3d2; /* Text color to stand out against the background */
+    border: 1px solid #40b7ad;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .ticket-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ticket-form label {
+    margin-bottom: 10px;
+  }
+  
+  .ticket-form input,
+  .ticket-form textarea,
+  .ticket-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .ticket-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #03a3d2;
+    color: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .ticket-form button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .ticket-card {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .create-ticket-btn {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ticket-card {
+      width: 100%; /* Full width on very small screens */
+      margin-bottom: 10px; /* Space between cards */
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .create-ticket-btn {
+      margin-top: 10px;
+    }
+  }
+
+  .ticket-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .ticket-type-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ticket-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ticket-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ticket-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .ticket-card button:hover {
+    background-color: #3e8e41;
+  }
+
+  .lbutton {
+    background-color: #345; /* Set the background color to a dark blue */
+    color: #ffffff; /* Set the text color to white */
+    padding: 10px 20px; /* Add some padding to make the button wider */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Add a rounded corner effect */
+    cursor: pointer; /* Change the cursor to a pointing hand on hover */
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 50px;
+  }
+  .lbutton:hover{
+    transform: scale(1.2); /* zoom in by 10% */
+    color: palevioletred; 
+    background-color: #fff;
+  }

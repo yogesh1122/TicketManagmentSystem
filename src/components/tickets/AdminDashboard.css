@@ -1,0 +1,188 @@
+.admin-dashboard-container {
+  height: 90vh; /* Set the height to 100vh to take up the full window screen */
+  overflow-y: auto; /* Add overflow-y to prevent content from being cut off */
+  flex-wrap: wrap;
+  width: 100%; /* adjust the width as needed */
+  margin: 20px; /* add some margin to create space around the container */
+  padding: 20px; /* add some padding to create space between the container and its contents */
+  border: 1px solid #ddd; /* add a border to the container */
+  border-radius: 10px; /* add a border radius to the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a box shadow to the container */
+}
+
+.adminhead {
+margin: 50px; 
+padding-top: 50px;
+color: #5cb85c;
+font-size: large; 
+}
+
+.adminhead:hover {
+  transform: scale(1.1); /* zoom in by 10% */
+  color: palevioletred; /* hover color */
+  cursor: pointer; /* add pointer cursor on hover */
+}
+
+.admin-dashboard-container h1 {
+  margin-top: 50px; /* remove the default margin top from the h1 element */
+}
+
+.admin-dashboard-container table {
+  width: 100%; /* make the table take up the full width of the container */
+  margin-top: 20px; /* add some margin top to create space between the h1 and the table */
+}
+
+.admin-dashboard {
+
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: grey;
+  }
+  h3 {
+    text-align: center;
+    color: grey;
+  }
+  h3:hover{
+    transform: scale(1.1); /* zoom in by 10% */
+    color: palevioletred; /* hover color */
+    cursor: pointer; /* add pointer cursor on hover */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  td button {
+    margin-right: 5px; /* Reduce margin between buttons */
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  td button.edit-btn {
+    background-color: #337ab7;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+  }
+  
+  td button.edit-btn:hover {
+    background-color: #23527c;
+    transform: translateY(-2px); 
+  }
+  
+  td button.delete-btn {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  td button.delete-btn:hover {
+    background-color: #c9302c;
+  }
+  
+  td button.change-role-btn {
+    background-color: #5cb85c;
+    color: #fff;
+  }
+  
+  td button.change-role-btn:hover {
+    background-color: #449d44;
+  }
+
+  .admin-dashboard table td:nth-child(4) button {
+    margin: 5px; /* Add margin to the buttons in the actions column */
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .lbutton {
+    background-color: #345; /* Set the background color to a dark blue */
+    color: #ffffff; /* Set the text color to white */
+    padding: 10px 20px; /* Add some padding to make the button wider */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Add a rounded corner effect */
+    cursor: pointer; /* Change the cursor to a pointing hand on hover */
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 50px;
+  }
+  .lbutton:hover{
+    transform: scale(1.2); /* zoom in by 10% */
+    color: palevioletred; 
+    background-color: #fff;
+  }
+
+  .btn--primary{
+    background: hsla(345, 93%, 44%, 1);
+    border-color:hsla(345, 93%, 44%, 1);
+    color:#ffffff;
+    padding:10px 20px; /* Adjust the padding to make the button wider */
+    line-height: 24px; /* Center the text vertically */
+    display: inline-block; /* Make the button an inline-block element */
+    text-align: center; /* Center the text horizontally */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn--primary:hover {
+    background-color: #363a3f;
+  }
+  
+  .btn--primary svg {
+    fill: white;
+    vertical-align: middle; /* Center the icon vertically */
+    margin-right: 10px; /* Add some space between the icon and the text */
+  }
+  
+  .btn--primary span {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000;
+  }
+  
+  .btn--primary:hover span {
+    display: block;
+  }
