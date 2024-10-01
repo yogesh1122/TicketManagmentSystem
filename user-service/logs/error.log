@@ -1,0 +1,24 @@
+2024-09-04 16:28:10 [error]: Error registering user: Validation error
+2024-09-04 16:29:06 [error]: Error registering user: Validation error
+2024-09-04 16:30:07 [error]: Error registering user: Validation error
+2024-09-04 16:34:03 [error]: Error registering user: Validation error
+2024-09-04 16:36:07 [error]: Error registering user: Validation error
+2024-09-04 16:36:53 [error]: Error registering user: Validation error
+2024-09-04 16:38:46 [error]: Error registering user: Validation error
+2024-09-04 16:39:32 [error]: Error registering user: Validation error
+2024-09-04 16:40:30 [error]: Error registering user: Validation error
+2024-09-04 16:44:20 [error]: Error registering user: Validation error
+2024-09-04 17:04:51 [error]: Error registering user: Validation error
+2024-09-04 21:37:19 [error]: Error registering user: Validation error
+2024-09-04 21:38:05 [error]: Error registering user: Validation error
+2024-09-04 21:45:20 [error]: Error registering user: relation "Users" does not exist
+2024-09-04 21:45:29 [error]: Error registering user: relation "Users" does not exist
+2024-09-05 14:03:12 [error]: Error registering user: invalid input syntax for type integer: "9bb13996-3bcd-4e6b-b095-b8b2ef0bfabf"
+2024-09-05 14:03:40 [error]: Error registering user: relation "Users" does not exist
+2024-09-05 22:59:49 [error]: Error registering user: connect ETIMEDOUT 127.0.0.1:5432
+2024-09-05 23:00:40 [error]: Error registering user: connect ETIMEDOUT 127.0.0.1:5432
+2024-09-05 23:00:53 [error]: Error registering user: connect ETIMEDOUT 127.0.0.1:5432
+2024-09-05 23:01:43 [error]: Error registering user: connect ETIMEDOUT 127.0.0.1:5432
+2024-09-06 15:12:15 [error]: Error registering user: Validation error
+2024-09-06 15:12:30 [error]: Error registering user: Validation error
+2024-09-20 16:54:10 [error]: Error registering user: agent is not defined

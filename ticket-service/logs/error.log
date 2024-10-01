@@ -1,0 +1,15 @@
+2024-08-30 14:08:02 [[31merror[39m]: Error creating ticket: Cannot read properties of undefined (reading 'create')
+2024-08-30 14:08:46 [[31merror[39m]: Error creating ticket: Cannot read properties of undefined (reading 'create')
+2024-08-30 14:09:31 [[31merror[39m]: Error creating ticket: Cannot read properties of undefined (reading 'create')
+2024-08-30 16:20:44 [[31merror[39m]: Error creating ticket: invalid input syntax for type integer: "0f16243a-6623-4c51-893d-2f3c7f37e92c"
+2024-08-30 16:22:31 [[31merror[39m]: Error creating ticket: invalid input syntax for type integer: "8a7408db-0cfc-4e01-9c98-77f472a6e438"
+2024-08-30 16:24:18 [[31merror[39m]: Error creating ticket: invalid input syntax for type integer: "6249bfe0-a7fb-4ff9-8e6a-2fb0dce1f1c0"
+2024-08-30 16:31:14 [[31merror[39m]: Error creating ticket: notNull Violation: Ticket.userId cannot be null
+2024-09-05 14:14:41 [[31merror[39m]: Error creating ticket: notNull Violation: Ticket.userId cannot be null
+2024-09-05 14:15:45 [[31merror[39m]: Error creating ticket: notNull Violation: Ticket.userId cannot be null
+2024-09-05 14:21:32 [[31merror[39m]: Error creating ticket: userId is not defined
+2024-09-05 23:04:00 [[31merror[39m]: Unable to connect to the database: connect ETIMEDOUT 127.0.0.1:5432
+2024-09-05 23:11:52 [[31merror[39m]: Unable to connect to the database: connect ETIMEDOUT 127.0.0.1:5432
+2024-09-13 16:08:07 [[31merror[39m]: Unable to connect to the database: connect ETIMEDOUT 127.0.0.1:5432
+2024-09-13 19:56:20 [[31merror[39m]: Unable to connect to the database: connect ETIMEDOUT 127.0.0.1:5432
+2024-09-21 00:01:03 [[31merror[39m]: Error creating ticket: column "closerMarks" does not exist
